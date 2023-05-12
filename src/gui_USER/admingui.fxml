@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1264.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.AdminguiController">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-4.0" prefHeight="713.0" prefWidth="297.0" style="-fx-background-color: #7595FC;">
+         <children>
+            <Button fx:id="MEDCIN" layoutY="105.0" mnemonicParsing="false" onAction="#MEDCIN" prefHeight="93.0" prefWidth="297.0" text="MEDCINS" />
+            <Button fx:id="PHARMACIEN" layoutY="198.0" mnemonicParsing="false" onAction="#PHARMACIEN" prefHeight="93.0" prefWidth="297.0" text="PHARMACIENS" />
+            <Button fx:id="PHARMACIEN1" layoutY="292.0" mnemonicParsing="false" onAction="#PHARMACIEN" prefHeight="93.0" prefWidth="297.0" text="PATIENTS" />
+         </children>
+      </Pane>
+      <BorderPane fx:id="PANE" layoutX="367.0" layoutY="84.0" prefHeight="568.0" prefWidth="843.0" />
+      <Button fx:id="CLOSE" layoutX="1178.0" layoutY="22.0" mnemonicParsing="false" onAction="#CLOSE" text="CLOSE" />
+   </children>
+</AnchorPane>

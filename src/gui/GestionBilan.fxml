@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="1051.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionBilanController">
+    <stylesheets>
+        <URL value="@gestionbilan.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="478.0" prefWidth="264.0" style="-fx-background-color: linear-gradient(to top left,  #318CE7  , #74D0F1); -fx-background-radius: 30 30 30 30;">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="170.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/docteur.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnajouterbilan" layoutX="36.0" layoutY="194.0" mnemonicParsing="false" onAction="#enregistrerbilan" prefHeight="45.0" prefWidth="145.0" style="-fx-background-radius: 30303030; -fx-background-color: #DFF2FF;" text="Ajouter" />
+            <Button layoutX="36.0" layoutY="262.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="145.0" style="-fx-background-radius: 30303030; -fx-background-color: #DFF2FF;" text="Modifier" />
+            <Button fx:id="btnsupprimerbilan" layoutX="36.0" layoutY="328.0" mnemonicParsing="false" onAction="#supprimerbilan" prefHeight="45.0" prefWidth="145.0" style="-fx-background-radius: 30303030; -fx-background-color: #DFF2FF;" text="supprimer" />
+            <Button layoutX="36.0" layoutY="398.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="145.0" style="-fx-background-radius: 30303030; -fx-background-color: #DFF2FF;" text="Actualiser" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableviewbil" layoutX="326.0" layoutY="315.0" prefHeight="328.0" prefWidth="634.0" style="-fx-background-color: #DFF2FF;">
+        <columns>
+          <TableColumn fx:id="coltype" prefWidth="176.0" text="type" />
+          <TableColumn fx:id="coldate" prefWidth="219.0" text="date_bilan" />
+            <TableColumn fx:id="colconclusion" prefWidth="238.0" text="conclusion" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="345.0" layoutY="2.0" prefHeight="293.0" prefWidth="596.0" style="-fx-background-color: linear-gradient(to top left,  #1ea2f5  , #74D0F1); -fx-background-radius: 30 30 30 30;">
+         <children>
+            <Label layoutX="45.0" layoutY="44.0" text="type:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="118.0" text="date_bilan:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="213.0" text="conclusion:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="tfdate_bilan" layoutX="247.0" layoutY="113.0" style="-fx-background-radius: 30303030;" />
+            <TextField fx:id="tftype" layoutX="247.0" layoutY="39.0" style="-fx-background-radius: 30303030;" />
+            <TextField fx:id="tfconclusion" layoutX="247.0" layoutY="208.0" style="-fx-background-radius: 30303030;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnenvoyer" layoutX="40.0" layoutY="541.0" mnemonicParsing="false" onAction="#envoyermail" prefHeight="57.0" prefWidth="176.0" style="-fx-background-color: linear-gradient(to top left,  #71b2f3  , #83d1ed); -fx-border-radius: 30303030;" text="Envoyer Email" />
+   </children>
+</AnchorPane>

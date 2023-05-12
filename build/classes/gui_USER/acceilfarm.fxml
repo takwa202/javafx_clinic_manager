@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.AcceilfarmController">
+   <children>
+      <Button fx:id="gestionproduit" layoutX="638.0" layoutY="217.0" mnemonicParsing="false" onAction="#gestionproduit" prefHeight="96.0" prefWidth="173.0" text="gestion produits" />
+      <AnchorPane prefHeight="149.0" prefWidth="471.0" style="-fx-border-radius: 30 30 30 30; -fx-background-color: linear-gradient(to top left,  #318CE7  , #74D0F1);">
+         <children>
+            <Text layoutX="37.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="accueil pharmacien" wrappingWidth="471.669921875">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

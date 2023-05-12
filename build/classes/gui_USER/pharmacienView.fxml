@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="699.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.PharmacienViewController">
+   <children>
+      <TableView fx:id="tabel" layoutY="144.0" prefHeight="554.0" prefWidth="866.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="40.666664123535156" text="ID" />
+            <TableColumn fx:id="NOM" prefWidth="108.66665649414062" text="NOM" />
+            <TableColumn fx:id="PN" prefWidth="103.66667175292969" text="PN" />
+            <TableColumn fx:id="ADRESS" prefWidth="175.66668701171875" text="ADRESS" />
+            <TableColumn fx:id="MAIL" prefWidth="191.33331298828125" text="MAIL" />
+            <TableColumn fx:id="PHONE" minWidth="2.0" prefWidth="133.33331298828125" text="PHONE" />
+            <TableColumn fx:id="IS_BLOCKED" prefWidth="106.3333740234375" text="IS BLOCKED" />
+         </columns>
+      </TableView>
+      <Button fx:id="search" ellipsisString="s" layoutX="610.0" layoutY="101.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="33.0" text="Button" />
+      <Button fx:id="add" layoutX="11.0" layoutY="101.0" mnemonicParsing="false" onAction="#add" text="add" />
+      <Button fx:id="delete" layoutX="139.0" layoutY="101.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+      <Button fx:id="refresh" layoutX="209.0" layoutY="101.0" mnemonicParsing="false" onAction="#refresh" prefHeight="31.0" prefWidth="67.0" text="refresh" />
+      <Button fx:id="update" layoutX="65.0" layoutY="101.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <TextField fx:id="searchinput" layoutX="643.0" layoutY="102.0" />
+      <Button fx:id="block" layoutX="289.0" layoutY="101.0" mnemonicParsing="false" onAction="#block" text="block" />
+      <Button fx:id="unblock" layoutX="356.0" layoutY="100.0" mnemonicParsing="false" onAction="#unblock" text="unblock" />
+   </children>
+</AnchorPane>

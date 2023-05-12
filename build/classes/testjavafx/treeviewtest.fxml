@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#CLOSE" prefHeight="488.0" prefWidth="868.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testjavafx.TreeviewtestController">
+    <stylesheets>
+        <URL value="@treeviewtest.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="TABLE" layoutX="97.0" layoutY="134.0" prefHeight="300.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="88.0" text="id" />
+          <TableColumn fx:id="NAME" prefWidth="89.0" text="name" />
+            <TableColumn fx:id="PRENOM" prefWidth="89.0" text="prenom" />
+            <TableColumn fx:id="AGE" prefWidth="152.0" text="age" />
+            <TableColumn fx:id="EDIT" prefWidth="281.0" text="idonno" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="104.0" layoutY="60.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="95.0" text="add" />
+      <Button fx:id="update" layoutX="219.0" layoutY="60.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <Button fx:id="refrech" layoutX="305.0" layoutY="60.0" mnemonicParsing="false" onAction="#refrech" text="refresh" />
+   </children>
+</AnchorPane>

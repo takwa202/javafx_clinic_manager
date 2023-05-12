@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.AddinterController">
+   <children>
+      <Text fx:id="idmed" layoutX="300.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="desc" layoutX="243.0" layoutY="238.0" />
+      <TextField fx:id="NOM" layoutX="243.0" layoutY="178.0" />
+      <Button fx:id="ADD" layoutX="257.0" layoutY="472.0" mnemonicParsing="false" onAction="#ADD" prefHeight="52.0" prefWidth="143.0" text="ADD" />
+      <Text layoutX="129.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id patient " />
+      <Text layoutX="148.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD intervention" textAlignment="CENTER" wrappingWidth="361.0">
+         <font>
+            <Font name="Cambria" size="50.0" />
+         </font>
+      </Text>
+      <Text fx:id="BIRTHDAY" layoutX="148.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" />
+      <DatePicker fx:id="date" layoutX="228.0" layoutY="319.0" />
+      <Text layoutX="133.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" />
+   </children>
+</AnchorPane>

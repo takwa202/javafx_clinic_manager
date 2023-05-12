@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.UpdateinterController">
+   <children>
+      <Text fx:id="idmed" layoutX="342.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="desc" layoutX="230.0" layoutY="231.0" />
+      <Text layoutX="126.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" />
+      <Text layoutX="126.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="update intervention " textAlignment="CENTER" wrappingWidth="361.0">
+         <font>
+            <Font name="Cambria" size="50.0" />
+         </font>
+      </Text>
+      <Button fx:id="update" layoutX="260.0" layoutY="412.0" mnemonicParsing="false" onAction="#update" prefHeight="52.0" prefWidth="143.0" text="ADD" />
+      <Text fx:id="BIRTHDAY" layoutX="148.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" />
+      <DatePicker fx:id="date" layoutX="230.0" layoutY="287.0" />
+      <Text fx:id="idinter" layoutX="88.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="27.553711727261543" />
+   </children>
+</AnchorPane>

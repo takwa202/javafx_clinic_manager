@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="970.0" prefWidth="1350.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionFicheController">
+    <stylesheets>
+        <URL value="@gestionfiche.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="7.0" prefHeight="363.0" prefWidth="277.0" style="-fx-background-radius: 30 30 30 30; -fx-background-color: linear-gradient(to top left,  #318CE7  , #74D0F1);">
+         <padding>
+            <Insets top="1.0" />
+         </padding></AnchorPane>
+      <Button fx:id="btnvalider_fiche" layoutX="1015.0" layoutY="14.0" mnemonicParsing="false" onAction="#saveFiche" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: linear-gradient(to top left,  #5ca1e7, #cedee3); -fx-background-radius: 0 30 0 30;" styleClass="mainFxmlClass" text="Valider">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="1021.0" layoutY="100.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="154.0" style="-fx-background-radius: 30 0 30 0; -fx-background-color: linear-gradient(to top left,  #5ca1e7, #cedee3);" text="modifier">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font></Button>
+      <Button fx:id="btnsupprimer_fiche" layoutX="1021.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#deleteFiche" prefHeight="54.0" prefWidth="154.0" style="-fx-background-radius: 0 30 0 30; -fx-background-color: linear-gradient(to top left,  #5ca1e7, #cedee3);" text="supprimer">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnactualiser_fiche" layoutX="1021.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="54.0" prefWidth="154.0" style="-fx-background-radius: 30 0 30 0; -fx-background-color: linear-gradient(to top left,  #5ca1e7, #cedee3);" text="actualiser">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <AnchorPane layoutX="293.0" layoutY="12.0" prefHeight="353.0" prefWidth="698.0" style="-fx-background-color: linear-gradient(to top left,  #1ea2f5  , #74D0F1); -fx-background-radius: 30 30 30 30;">
+         <children>
+            <Label layoutX="40.0" layoutY="14.0" prefHeight="54.0" prefWidth="111.0" text="id_patient:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label layoutX="57.0" layoutY="130.0" prefHeight="47.0" prefWidth="101.0" text="id_bilan:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="355.0" layoutY="31.0" prefHeight="37.0" prefWidth="90.0" text="diagnostic:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="349.0" layoutY="177.0" prefHeight="37.0" prefWidth="154.0" text="consigne_medicale:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <TextField fx:id="tfid_pat_fiche" layoutX="25.0" layoutY="79.0" style="-fx-background-radius: 30303030;" />
+            <TextField fx:id="tfid_bil_fiche" layoutX="25.0" layoutY="189.0" style="-fx-background-radius: 30303030;" />
+            <TextField fx:id="tfdiag" layoutX="349.0" layoutY="79.0" prefHeight="70.0" prefWidth="213.0" style="-fx-background-radius: 30303030;" />
+            <TextField fx:id="tfconsigne" layoutX="349.0" layoutY="220.0" prefHeight="62.0" prefWidth="220.0" style="-fx-background-radius: 30303030;" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableviewfiche" layoutX="-82.0" layoutY="448.0" prefHeight="475.0" prefWidth="1389.0" style="-fx-background-color: #DFF2FF;">
+         <columns>
+            <TableColumn fx:id="diagcol" prefWidth="327.0000305175781" text="diagnostic" />
+            <TableColumn fx:id="conscol" minWidth="0.0" prefWidth="336.0" text="consigne_medicale" />
+         </columns>
+      </TableView>
+      <Text fill="#3046e3" layoutX="25.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les informations relatives à la fiche:" wrappingWidth="277.0000003874302">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="25.0" layoutY="417.0" prefHeight="8.0" prefWidth="698.0" style="-fx-background-color: linear-gradient(to top left,  #318CE7  , #74D0F1);" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/docteur.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.AcceilpatController">
+   <children>
+      <Text layoutX="38.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="accueil patient" wrappingWidth="449.669921875">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <Button fx:id="reclamer" layoutX="609.0" layoutY="399.0" mnemonicParsing="false" onAction="#reclamer" text="reclamer" />
+   </children>
+</AnchorPane>

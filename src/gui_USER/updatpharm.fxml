@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.UpdatpharmController">
+   <children>
+      <TextField fx:id="PHONE" layoutX="277.0" layoutY="422.0" />
+      <TextField fx:id="PN" layoutX="276.0" layoutY="236.0" />
+      <TextField fx:id="NOM" layoutX="276.0" layoutY="188.0" />
+      <TextField fx:id="ADRESS" layoutX="276.0" layoutY="322.0" />
+      <TextField fx:id="MAIL" layoutX="276.0" layoutY="373.0" />
+      <Button fx:id="update" layoutX="265.0" layoutY="597.0" mnemonicParsing="false" onAction="#update" prefHeight="52.0" prefWidth="143.0" text="ADD" />
+      <Text layoutX="176.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOM" />
+      <Text layoutX="177.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prenom" />
+      <Text layoutX="177.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRESS" />
+      <Text layoutX="179.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAIL" />
+      <Text layoutX="180.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE" />
+      <Text layoutX="37.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.0" />
+      <Text layoutX="117.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="update pharmacien" textAlignment="CENTER" wrappingWidth="361.0">
+         <font>
+            <Font name="Cambria" size="50.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PASSWORD" layoutX="276.0" layoutY="280.0" />
+      <Text layoutX="172.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD" />
+      <Text fx:id="thefiletitle" layoutX="352.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="PIC" layoutX="260.0" layoutY="500.0" mnemonicParsing="false" onAction="#PIC" prefHeight="31.0" prefWidth="218.0" text="add picture" />
+      <Text fx:id="BIRTHDAY1" layoutX="169.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE PIC" />
+      <Text fx:id="id" layoutX="360.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="27.553711727261543" />
+   </children>
+</AnchorPane>

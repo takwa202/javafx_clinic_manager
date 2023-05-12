@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="303.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormLettreController">
+   <children>
+      <DatePicker fx:id="DateLettretf" layoutX="272.0" layoutY="40.0" />
+      <TextField fx:id="tfDescription" layoutX="167.0" layoutY="134.0" prefHeight="66.0" prefWidth="279.0" />
+      <TextField fx:id="tfSignature" layoutX="169.0" layoutY="237.0" prefHeight="40.0" prefWidth="126.0" />
+      <TextField fx:id="idOrdtf" layoutX="308.0" layoutY="83.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="196.0" layoutY="44.0" prefHeight="17.0" prefWidth="57.0" text="Date :" />
+      <Label layoutX="178.0" layoutY="87.0" text="Entrez l'id ordonnance :" />
+      <Label layoutX="167.0" layoutY="117.0" text="Description : " />
+      <Label layoutX="172.0" layoutY="213.0" text="Signature : " />
+      <ImageView fitHeight="148.0" fitWidth="115.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/lettre-de-motivation.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="14.0" text="Détails Lettre Confidentielle : ">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEnreL" layoutX="337.0" layoutY="257.0" mnemonicParsing="false" onAction="#saveLettre" prefHeight="25.0" prefWidth="88.0" text="Enregistrer">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_USER.MedcinviewController">
+   <children>
+      <TableView fx:id="tabel" layoutY="141.0" prefHeight="554.0" prefWidth="843.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="58.0" text="ID" />
+          <TableColumn fx:id="NOM" prefWidth="94.0" text="NOM" />
+            <TableColumn fx:id="PN" prefWidth="92.0" text="PN" />
+            <TableColumn fx:id="ADRESS" prefWidth="76.0" text="ADRESS" />
+            <TableColumn fx:id="MAIL" prefWidth="126.0" text="MAIL" />
+            <TableColumn fx:id="AGE" minWidth="0.0" prefWidth="65.0" text="AGE" />
+            <TableColumn fx:id="GENDER" prefWidth="97.0" text="GENDER" />
+            <TableColumn fx:id="PHONE" minWidth="2.0" prefWidth="71.0" text="PHONE" />
+            <TableColumn fx:id="NBR_R" prefWidth="61.0" text="NBR R" />
+            <TableColumn fx:id="IS_BLOCKED" prefWidth="99.0" text="IS BLOCKED" />
+        </columns>
+      </TableView>
+      <Button fx:id="search" ellipsisString="s" layoutX="610.0" layoutY="101.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="33.0" text="Button" />
+      <Button fx:id="add" layoutX="15.0" layoutY="85.0" mnemonicParsing="false" onAction="#add" text="add" />
+      <Button fx:id="delete" layoutX="143.0" layoutY="85.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+      <Button fx:id="refresh" layoutX="213.0" layoutY="85.0" mnemonicParsing="false" onAction="#refresh" prefHeight="31.0" prefWidth="67.0" text="refresh" />
+      <Button fx:id="update" layoutX="69.0" layoutY="85.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <TextField fx:id="searchinput" layoutX="643.0" layoutY="99.0" />
+      <Button fx:id="block" layoutX="293.0" layoutY="85.0" mnemonicParsing="false" onAction="#block" text="block" />
+      <Button fx:id="unblock" layoutX="360.0" layoutY="84.0" mnemonicParsing="false" onAction="#unblock" text="unblock" />
+   </children>
+</AnchorPane>
